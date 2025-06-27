@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+streamlit
+pandas
+numpy
+joblib
+requests
+matplotlib
+plotly
+pytz
+=======
+streamlit
+pandas
+numpy
+joblib
+requests
+matplotlib
+plotly
+pytz
+>>>>>>> afbb0ad859d0bf00fb55dd3682517b0959121153
+openpyxl
