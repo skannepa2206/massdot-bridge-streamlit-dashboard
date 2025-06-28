@@ -5,4 +5,7 @@ joblib
 requests
 matplotlib
 plotly
+scikit-learn
+pytorch-tabnet
+torch
 pytz
