@@ -1315,12 +1315,12 @@ if st.session_state.is_admin:
         📋 **Data Integration Process:**
         1. **Upload**: Select Excel or CSV file with bridge log data
         2. **Validation**: System checks for required columns (Start Time, End Time)
-        3. **Processing**: Converts times to proper format and removes duplicates
-        4. **Integration**: Merges with existing data and saves to main dataset
-        5. **Model Update**: ML models automatically retrain with new data (in production)
+        3. **Standardization**: Auto-formats to: Start Time, End Time, Duration, Direction, Vessel(s)
+        4. **Smart Integration**: Date-based merging - replaces existing dates, adds new dates
+        5. **UI Update**: Dashboard immediately shows actual data for uploaded dates
+        6. **Format Export**: All data maintained in standardized format for consistency
         
-        **Required Columns:** `Start Time`, `End Time`  
-        **Optional Columns:** `Direction`, `Vessel(s)`, `Duration`
+        **Example Format:** `6/1/2023 0:22, 6/1/2023 0:40, 18 min, OUT, Justice/Gracie Reinauer`
         """)
         
         uploaded_file = st.file_uploader("Upload Excel/CSV", type=['xlsx', 'csv'])
