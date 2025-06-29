@@ -9,3 +9,4 @@ scikit-learn
 pytorch-tabnet
 torch
 pytz
+openpyxl
