@@ -386,7 +386,7 @@ st.markdown(f"""
         border-radius: 8px !important;
         padding: 0.5rem 1.2rem !important;
         font-weight: 600 !important;
-        font-size: 0.8rem !important;
+        font-size: 0.7rem !important;
         text-transform: uppercase !important;
         letter-spacing: 0.3px !important;
         transition: all 0.3s ease !important;
