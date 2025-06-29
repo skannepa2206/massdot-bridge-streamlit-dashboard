@@ -115,7 +115,7 @@ Shows detailed schedule with:
 
 #### **Login**
 1. In the sidebar, find "Admin Access"
-2. Enter password: `MassDOT2025!`
+2. Enter password: 
 3. Click "Login"
 
 #### **Admin Features**
