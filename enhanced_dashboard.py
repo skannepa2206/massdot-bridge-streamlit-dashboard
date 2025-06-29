@@ -1000,27 +1000,7 @@ def generate_vms_text(predictions):
     if not predictions:
         return "CHELSEA BRIDGE\nNO LIFTS TODAY"
     
-    # Get current time
-    from datetime import datetime
-    import pytz
-    BOSTON_TZ = pytz.timezone("America/New_York")
-    now = datetime.now(BOSTON_TZ)
-    current_time_minutes = now.hour * 60 + now.minute
-    
-    # Filter for upcoming lifts only
-    upcoming_lifts = []
-    for pred in predictions:
-        pred_time_minutes = pred['hour'] * 60 + pred['minute']
-        if pred_time_minutes > current_time_minutes:
-            upcoming_lifts.append(pred)
-        if len(upcoming_lifts) >= 3:  # Only need first 3 upcoming
-            break
-    
-    # If no upcoming lifts today, show message
-    if not upcoming_lifts:
-        return "CHELSEA BRIDGE\nNO MORE LIFTS TODAY"
-    
-    next_lifts = upcoming_lifts  # Use upcoming lifts instead of first 3
+    next_lifts = predictions[:3]
     
     vms_lines = []
     for i, pred in enumerate(next_lifts):
